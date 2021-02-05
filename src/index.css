@@ -1,13 +1,177 @@
 body {
+  padding: 10px;
+  font-family: sans-serif;
+  background:
+      url("https://xb-static.nm-ovp.nelonenmedia.fi/xb/styles/2560x1440/public/img/d7835e95c79a365baf66fa6d17802394b99e7ffc-w_kumman_kaa_1920x1080.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 80%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 3%;
+  position: relative;
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  text-align: center;
+  font-size: 4vw;
+  font-weight: 100;
+  margin: 0.2em;
+  color: #373737;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+.header {
+  color: #ffffff; font-family: 'Rouge Script', cursive; font-size: 600%; font-weight: normal; line-height: 10%; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #ff29b8;
+  margin-bottom: 5%;
+}
+
+.name {
+  font-family: Courier;
+  font-size: 220%;
+  text-shadow: 3px 3px #000000;
+}
+
+.appContainer {
+  margin: auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  top: 0%;
+}
+
+.sound-card {
+  width: 75%;
+  height: 50%;
+  justify-self: center;
+  background-color: #3EAAFE;
+  color: #fff;
+}
+
+.profile-image {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  max-height:100%;
+  max-width:100%;
+  border: 20px groove #FF69B4;
+}
+
+div.sound-card:nth-of-type(odd) {
+  background-color: #000;
+  color: #fff;
+}
+
+.image-container {
+  max-height:100%;
+  max-width:100%;
+  float: left;
+  padding-left: 10px;
+}
+
+.count {
+  height: 40px;
+  padding-left: 60px;
+  line-height: 45px;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    padding: 10px;
+    font-family: sans-serif;
+    background:
+        url("https://xb-static.nm-ovp.nelonenmedia.fi/xb/styles/2560x1440/public/img/d7835e95c79a365baf66fa6d17802394b99e7ffc-w_kumman_kaa_1920x1080.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 80%;
+    margin: 0;
+    padding: 3%;
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 100;
+    margin: 0.2em;
+    color: #373737;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  .header {
+    color: #ffffff; font-family: 'Rouge Script', cursive; font-size: 200%; font-weight: normal; line-height: 130%; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #ff29b8;
+    margin-bottom: 5%;
+  }
+  
+  .name {
+    font-family: Cursive;
+    font-size: 100%;
+    text-shadow: 1px 1px #000000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .appContainer {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    top: 0%;
+  }
+  
+  .sound-card {
+    width: 75%;
+    height: 50%;
+    justify-self: center;
+    background-color: #3EAAFE;
+    color: #fff;
+  }
+  
+  .profile-image {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    max-height:100%;
+    max-width:100%;
+    border: 10px groove #FF69B4;
+  }
+  
+  div.sound-card:nth-of-type(odd) {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .image-container {
+    max-height:100%;
+    max-width:100%;
+    float: left;
+    padding-left: 10px;
+  }
+  
+  .count {
+    height: 40px;
+    padding-left: 60px;
+    line-height: 45px;
+  }
 }
