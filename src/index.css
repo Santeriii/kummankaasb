@@ -133,12 +133,9 @@ div.sound-card:nth-of-type(odd) {
   }
   
   .appContainer {
-    position: 'relative';
-    margin: auto;
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    top: 0%;
+    grid-row-gap: 0%;
   }
   
   .sound-card {
@@ -150,9 +147,6 @@ div.sound-card:nth-of-type(odd) {
   }
   
   .profile-image {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
     max-height:100%;
     max-width:100%;
     border: 10px groove #FF69B4;
@@ -168,11 +162,5 @@ div.sound-card:nth-of-type(odd) {
     max-width:100%;
     float: left;
     padding-left: 10px;
-  }
-  
-  .count {
-    height: 40px;
-    padding-left: 60px;
-    line-height: 45px;
   }
 }
