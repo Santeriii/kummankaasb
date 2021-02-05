@@ -92,7 +92,7 @@ div.sound-card:nth-of-type(odd) {
     background:
         url("https://xb-static.nm-ovp.nelonenmedia.fi/xb/styles/2560x1440/public/img/d7835e95c79a365baf66fa6d17802394b99e7ffc-w_kumman_kaa_1920x1080.jpg") no-repeat center center fixed;
     background-size: cover;
-    height: 80%;
+    height: 40%;
     margin: 0;
     padding: 3%;
     position: relative;
