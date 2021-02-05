@@ -96,7 +96,6 @@ div.sound-card:nth-of-type(odd) {
     margin: 0;
     padding: 3%;
     position: relative;
-    min-height: 100vh;
   }
   
   h1 {
@@ -120,19 +119,21 @@ div.sound-card:nth-of-type(odd) {
   }
   
   .header {
-    color: #ffffff; font-family: 'Rouge Script', cursive; font-size: 200%; font-weight: normal; line-height: 130%; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #ff29b8;
+    color: #ffffff; font-family: Comic; font-size: 200%; font-weight: normal; line-height: 130%; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #ff29b8;
     margin-bottom: 5%;
   }
   
   .name {
-    font-family: Cursive;
+    font-family: Comic;
     font-size: 100%;
     text-shadow: 1px 1px #000000;
     letter-spacing: 1px;
     text-transform: uppercase;
+    position: absolute;
   }
   
   .appContainer {
+    position: 'relative';
     margin: auto;
     width: 100%;
     display: grid;
