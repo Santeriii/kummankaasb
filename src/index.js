@@ -59,9 +59,16 @@ class Board extends React.Component {
 
 class Sound extends React.Component {
   render() {
+    let speakerHidden = true;
+    if (this.props.sound.isPlaying && this.props.sound.soundName === this.props.audio.soundName && this.props.audio.currentlyPlaying) {
+      speakerHidden = false;
+    }
     return (
       <div className='sound-card'
         onClick={() => this.props.playSound(this.props.sound.id)}>
+           {!speakerHidden &&
+            <img className="playing" src="https://www.pikpng.com/pngl/m/302-3024552_png-file-speaker-icon-clipart.png" alt="currently playing"></img>
+           }
             <img className="profile-image" src={this.props.sound.image} alt="W3Schools.com"></img>
             <h3 className="name">{this.props.sound.soundName}</h3>
       </div>

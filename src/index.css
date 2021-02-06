@@ -48,6 +48,13 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   top: 0%;
+  cursor: pointer;
+}
+
+.playing {
+  position: absolute;
+  width: 3%;
+  height: 4%;
 }
 
 .sound-card {
@@ -132,22 +139,23 @@ div.sound-card:nth-of-type(odd) {
   }
   
   .appContainer {
+    justify-items: left;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 0%;
     width: 100%;
-    grid-template-rows: 110px 110px 110px;
+    grid-template-rows: 30% 30% 30%;
   }
   
   .sound-card {
+    justify-self: start;
     width: 75%;
     height: 40%;
-    justify-self: center;
     background-color: #3EAAFE;
     color: #fff;
   }
   
   .profile-image {
+    justify-self: left;
     max-height:100%;
     max-width:100%;
     border: 10px groove #FF69B4;
