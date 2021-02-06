@@ -89,7 +89,7 @@ class App extends React.Component {
       return (
         <div>
           <h1 className="header">"Kumman kaa"-Soundboard</h1>
-          <Board sounds={this.state.sounds} audio={this.state.audio} />
+          <Board className="board" sounds={this.state.sounds} audio={this.state.audio} />
           <p style={{color:"white"}}>By Snaderi</p>
         </div>
       );

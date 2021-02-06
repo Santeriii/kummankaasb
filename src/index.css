@@ -129,18 +129,18 @@ div.sound-card:nth-of-type(odd) {
     text-shadow: 1px 1px #000000;
     letter-spacing: 1px;
     text-transform: uppercase;
-    position: absolute;
   }
   
   .appContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 0%;
+    width: 100%;
   }
   
   .sound-card {
     width: 75%;
-    height: 20%;
+    height: 60%;
     justify-self: center;
     background-color: #3EAAFE;
     color: #fff;
