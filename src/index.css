@@ -103,6 +103,7 @@ div.sound-card:nth-of-type(odd) {
     margin: 0;
     padding: 3%;
     position: relative;
+    min-height: fit-content;
   }
   
   h1 {
