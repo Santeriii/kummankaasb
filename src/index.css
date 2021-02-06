@@ -137,6 +137,7 @@ div.sound-card:nth-of-type(odd) {
     text-shadow: 1px 1px #000000;
     letter-spacing: 1px;
     text-transform: uppercase;
+    position: absolute;
   }
   
   .appContainer {
