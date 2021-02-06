@@ -126,6 +126,12 @@ div.sound-card:nth-of-type(odd) {
     color: white;
   }
   
+  .playing {
+    position: absolute;
+    width: 4%;
+    height: 2%;
+  }
+
   .header {
     color: #ffffff; font-family: Comic; font-size: 200%; font-weight: normal; line-height: 130%; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #ff29b8;
     margin-bottom: 5%;
