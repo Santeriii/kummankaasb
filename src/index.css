@@ -32,21 +32,22 @@ a {
 }
 
 .header {
-  color: #ffffff; font-family: 'Rouge Script', cursive; font-size: 600%; font-weight: normal; line-height: 10%; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #ff29b8;
+  color: #ffffff; font-family: 'Rouge Script', cursive; font-size: 5vw; font-weight: normal; line-height: 10%; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #ff29b8;
   margin-bottom: 5%;
 }
 
 .name {
   font-family: Courier;
-  font-size: 220%;
+  font-size: 2vw;
   text-shadow: 3px 3px #000000;
+  font-weight: bold;
 }
 
 .appContainer {
   margin: auto;
-  width: 60%;
+  width: 75%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   top: 0%;
   cursor: pointer;
 }
@@ -59,7 +60,7 @@ a {
 
 .sound-card {
   width: 75%;
-  height: 50%;
+  height: 70%;
   justify-self: center;
   background-color: #3EAAFE;
   color: #fff;
@@ -72,6 +73,16 @@ a {
   max-height:100%;
   max-width:100%;
   border: 20px groove #FF69B4;
+}
+
+.profile-image-playing {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  max-height:100%;
+  max-width:100%;
+  border: 20px groove #FF69B4;
+  animation: mymove 1.3s infinite;
 }
 
 div.sound-card:nth-of-type(odd) {
@@ -90,6 +101,16 @@ div.sound-card:nth-of-type(odd) {
   height: 40px;
   padding-left: 60px;
   line-height: 45px;
+}
+
+@keyframes mymove {
+  from {border: 20px groove #FF69B4}
+  to {border: 20px groove white}
+}
+
+@keyframes mymove-mobile {
+  from {border: 10px groove #FF69B4}
+  to {border: 10px groove white}
 }
 
 @media only screen and (max-width: 900px) {
@@ -167,6 +188,14 @@ div.sound-card:nth-of-type(odd) {
     max-height:100%;
     max-width:100%;
     border: 10px groove #FF69B4;
+  }
+
+  .profile-image-playing {
+    justify-self: left;
+    max-height:100%;
+    max-width:100%;
+    border: 10px groove #FF69B4;
+    animation: mymove-mobile 1.3s infinite;
   }
   
   div.sound-card:nth-of-type(odd) {

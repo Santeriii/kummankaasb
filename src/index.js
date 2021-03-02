@@ -67,10 +67,20 @@ class Sound extends React.Component {
       <div className='sound-card'
         onClick={() => this.props.playSound(this.props.sound.id)}>
            {!speakerHidden &&
-            <img className="playing" src="https://www.pikpng.com/pngl/m/302-3024552_png-file-speaker-icon-clipart.png" alt="currently playing"></img>
+              <>
+                <img className="playing" src="https://www.pikpng.com/pngl/m/302-3024552_png-file-speaker-icon-clipart.png" alt="currently playing"></img>
+                <img className="profile-image-playing" src={this.props.sound.image} alt="W3Schools.com"></img>
+                <br/>
+                <div className="name">{this.props.sound.soundName}</div>
+              </>
            }
-            <img className="profile-image" src={this.props.sound.image} alt="W3Schools.com"></img>
-            <h3 className="name">{this.props.sound.soundName}</h3>
+           {speakerHidden &&
+            <>
+              <img className="profile-image" src={this.props.sound.image} alt="W3Schools.com"></img>
+              <br/>
+              <div className="name">{this.props.sound.soundName}</div>
+            </>
+           }
       </div>
     );
   }
@@ -88,7 +98,10 @@ class App extends React.Component {
         { id: 5, soundName: 'Tarja', soundURL: 'https://dl.dropboxusercontent.com/s/pwwx7zdndtm4jia/Tarja.mp3?dl=0', image: 'https://dl.dropboxusercontent.com/s/51aodnl1mjfa5uf/Tarja.PNG?dl=0', count: 0, isPlaying: false },
         { id: 6, soundName: 'Telttapoju', soundURL: 'https://dl.dropboxusercontent.com/s/sqrxf76sqa6lfcd/Telttapoju.mp3?dl=0', image: 'https://dl.dropboxusercontent.com/s/yiihok9tovvfa8i/Telttapoju.PNG?dl=0', count: 0, isPlaying: false },
         { id: 7, soundName: 'Jesse', soundURL: 'https://dl.dropboxusercontent.com/s/442hmlfw5r9sbuv/Jesse.mp3?dl=0', image: 'https://dl.dropboxusercontent.com/s/97c4cd2cajh04gl/Jesse.PNG?dl=0', count: 0, isPlaying: false },
-        { id: 8, soundName: 'Laulu', soundURL: 'https://dl.dropboxusercontent.com/s/xmhmgbxmoc0is9d/Laulu.mp3?dl=0', image: 'https://dl.dropboxusercontent.com/s/9mtbrehyubk9d0o/Laulu.PNG?dl=0', count: 0, isPlaying: false }
+        { id: 8, soundName: 'Laulu', soundURL: 'https://dl.dropboxusercontent.com/s/xmhmgbxmoc0is9d/Laulu.mp3?dl=0', image: 'https://dl.dropboxusercontent.com/s/9mtbrehyubk9d0o/Laulu.PNG?dl=0', count: 0, isPlaying: false },
+        { id: 9, soundName: 'Cajander', soundURL: 'https://dl.dropboxusercontent.com/s/4j0io993alrelu1/Muusikko.mp3?dl=0', image: 'https://dl.dropboxusercontent.com/s/s1qx764v61l2li0/Muusikko.PNG?dl=0', count: 0, isPlaying: false },
+        { id: 10, soundName: 'Mika', soundURL: 'https://dl.dropboxusercontent.com/s/0qnxln7klmnd830/Vielako_lohkee.mp3?dl=0', image: 'https://dl.dropboxusercontent.com/s/oj3yjcgbmej2wff/Vielako_lohkee.PNG?dl=0', count: 0, isPlaying: false },
+        { id: 11, soundName: 'Kriittinen tilanne', soundURL: 'https://dl.dropboxusercontent.com/s/5n8gpxrikpqvqyx/Kriittinen_tilanne.mp3?dl=0', image: 'https://dl.dropboxusercontent.com/s/gtz9w4yf9x4l2zs/Kriittinen_tilanne.PNG?dl=0', count: 0, isPlaying: false }
       ]
     }
   }
